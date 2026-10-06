@@ -47,6 +47,11 @@ main { min-height: 70vh; }
 .mobile-navigation a b { font-size: 24px; }
 .mobile-nav-foot { position: absolute; bottom: 28px; left: 6vw; right: 6vw; font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
 
+@media (min-width: 821px) {
+  .mobile-navigation { display: none; }
+  body.nav-locked { overflow: auto; }
+}
+
 .hero { position: relative; height: min(850px, calc(100svh - 78px)); min-height: 590px; overflow: hidden; background: #0b0b0b; color: white; isolation: isolate; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: 4; border: 10px solid #0b0b0b; pointer-events: none; }
 .hero-rows { position: absolute; inset: 3% 0 5%; display: flex; flex-direction: column; justify-content: center; gap: clamp(0px, .5vh, 8px); transform: rotate(-1deg) scale(1.03); }

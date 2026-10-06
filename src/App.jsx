@@ -3,6 +3,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { CartDrawer } from "./components/CartDrawer.jsx";
 import { SiteFooter } from "./components/SiteFooter.jsx";
 import { SiteHeader } from "./components/SiteHeader.jsx";
+import { scrollPageToTop } from "./browser.js";
 import { CollectionPage } from "./pages/CollectionPage.jsx";
 import { CheckoutPage } from "./pages/CheckoutPage.jsx";
 import { ConnectShopifyPage } from "./pages/ConnectShopifyPage.jsx";
@@ -11,7 +12,9 @@ import { ProductPage } from "./pages/ProductPage.jsx";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
-  useEffect(() => window.scrollTo({ top: 0, behavior: "instant" }), [pathname]);
+  useEffect(() => {
+    scrollPageToTop();
+  }, [pathname]);
   return null;
 }
 
