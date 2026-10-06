@@ -4,6 +4,8 @@ import { CartDrawer } from "./components/CartDrawer.jsx";
 import { SiteFooter } from "./components/SiteFooter.jsx";
 import { SiteHeader } from "./components/SiteHeader.jsx";
 import { CollectionPage } from "./pages/CollectionPage.jsx";
+import { CheckoutPage } from "./pages/CheckoutPage.jsx";
+import { ConnectShopifyPage } from "./pages/ConnectShopifyPage.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import { ProductPage } from "./pages/ProductPage.jsx";
 
@@ -24,6 +26,8 @@ export default function App() {
           <Route path="/collections/:category" element={<CollectionPage />} />
           <Route path="/collections" element={<CollectionPage />} />
           <Route path="/products/:slug" element={<ProductPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
+          <Route path="/connect-shopify" element={<ConnectShopifyPage />} />
           <Route path="*" element={<CollectionPage />} />
         </Routes>
       </main>
@@ -32,4 +36,3 @@ export default function App() {
     </div>
   );
 }
-
