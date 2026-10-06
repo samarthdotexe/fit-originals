@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const steps = [
   { number: "01", title: "Create a public Storefront token", copy: "In Shopify Admin, install or open the Headless sales channel and create Storefront API access for products, variants, and carts." },
-  { number: "02", title: "Add two environment values", copy: "Set the existing myshopify.com domain and the public Storefront token in the site runtime. Secrets never belong in the browser bundle." },
+  { number: "02", title: "Add two environment values", copy: "Set the existing myshopify.com domain and a public Storefront API token in the site runtime. Keep private Admin API credentials server-side." },
   { number: "03", title: "Switch the commerce provider", copy: "The adapter maps Shopify products to the existing card, product, cart, and collection interfaces. The visual storefront stays unchanged." },
   { number: "04", title: "Send payment to Shopify", copy: "At checkout, the provider creates a Shopify cart and redirects to Shopify’s hosted payment page. Card data never touches this site." },
 ];
@@ -33,4 +33,3 @@ export function ConnectShopifyPage() {
     </section>
   );
 }
-

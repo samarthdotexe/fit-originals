@@ -26,7 +26,7 @@ export function SiteFooter() {
           <p>Connect</p>
           <a href="https://www.instagram.com/fit.orginals" target="_blank" rel="noreferrer">Instagram ↗</a>
           <Link to="/connect-shopify">Merchant setup</Link>
-          <a href="mailto:hello@fitoriginals.store">Email support</a>
+          <a href="https://cwuaqi-8x.myshopify.com/pages/contact" target="_blank" rel="noreferrer">Current store support ↗</a>
         </div>
         <form className="footer-signup" onSubmit={(event) => event.preventDefault()}>
           <label htmlFor="footer-email">First access to new drops</label>
@@ -38,4 +38,3 @@ export function SiteFooter() {
     </footer>
   );
 }
-
